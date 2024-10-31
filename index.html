@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
@@ -16,14 +16,14 @@
                 <img id="imgPokemon" src="#" alt="imagem do pokemon">
             </figure>
             <form class="form-busca">
-                <input id="inputText" type="text">
+                <input id="inputText" value="" type="text" placeholder="Digite o nome ou número">
             </form>
-            <h1 class="pokemon-data1">   
-                <span id="numeroPokemon">ID</span>
+            <h1 class="pokemon-data1">
+                <span id="numeroPokemon" >ID</span>
                 <span id="nomePokemon">NomePokémon</span>
             </h1>
             <h1 class="pokemon-data2">
-                <div>Tipo:</div>
+                <div id="typePokemon">Tipo:</div>
                 <div>Peso:</div>
                 <div>Altura:</div>
             </h1>
@@ -31,11 +31,7 @@
                 <button id="btnAnterior">Anterior</button>
                 <button id="btnProximo">Próximo</button>
             </div>
-         
-        </div>
-
     </main>
-
     <script src="index.js"></script>
 </body>
 </html>
