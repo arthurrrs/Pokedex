@@ -29,8 +29,12 @@
             </h1>
             <div class="buttons">
                 <button id="btnAnterior">Anterior</button>
-                <button id="btnProximo">Próximo</button>
+                <button id="btnProximo" onclick="document.getElementById('somProximo').play()">Próximo</button>
             </div>
+
+            <audio id="somProximo">
+                <source src="som/pickachu.mp3" type="audio/mpeg">    
+            </audio>
     </main>
     <script src="index.js"></script>
 </body>

@@ -10,6 +10,7 @@ const typePoke = document.querySelector("#typePokemon")
 let IDPokemon = 1;
 
 
+
 const fetchPokemon = async (pokemon) => {
     const APIresponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     const data = await APIresponse.json();
@@ -42,5 +43,6 @@ form.addEventListener('submit', (event) => {
     showPokemon(inputText.value.toLowerCase());
 
 });
+
 
 showPokemon(IDPokemon)

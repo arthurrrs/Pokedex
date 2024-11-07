@@ -10,6 +10,8 @@ html, body{
 }
 body{
     background-color: green;
+    background-image: url(./img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
 }
 main{
     width: 100%;
