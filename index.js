@@ -7,6 +7,8 @@ const buttonA = document.querySelector("#btnAnterior")
 const buttonP = document.querySelector("#btnProximo")
 const typePoke = document.querySelector("#typePokemon")
 
+
+
 let IDPokemon = 1;
 
 
@@ -45,4 +47,11 @@ form.addEventListener('submit', (event) => {
 });
 
 
-showPokemon(IDPokemon)
+buttonP.addEventListener('click', (event) =>{
+    event.preventDefault();
+    IDPokemon += 1;
+
+    showPokemon(IDPokemon)
+})
+
+showPokemon(IDPokemon) 
